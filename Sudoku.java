@@ -2,10 +2,7 @@
 // Author: Sanika Bhoir
  public class Sudoku
  {
-
-
-   // isSafe function to check row col appraoch as number is present particular
-   //  row and col
+ // isSafe function to check row col appraoch as number is present particular  row and col
      
    public boolean isSafe(char [][] board,int row,int col,int number){
       //  row col
@@ -17,9 +14,7 @@
             return false;
       }
    }
-
-
-      // grid condition for starting row and col of grid
+    // grid condition for starting row and col of grid
       //formula is  (r/3)*3 ,(c/3)*3 
       int sr= (row/3) * 3;
       int sc= (col/3) *3;
@@ -34,7 +29,7 @@
     }
     return true;
    }
-    // recirusion form  of solving the Sudoku 
+    // recursion form  of solving the Sudoku 
     // boolean for valid sudoku ---true ,invalid Sudoku ----false
     public boolean helper(char[][] board,int  row, int col) {
    //   base condition as sudoku is full with numbers
@@ -42,8 +37,7 @@
          return true;
          // borad is full
       }
-   //   startin row and col
-
+   //   starting row and col
        int nrow=0;
        int ncol=0;
        if(col!= board.length-1){
